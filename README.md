@@ -6,7 +6,7 @@ youtube = build("youtube", "v3", developerKey=api_key)
 
 # Data de 30 dias atrás
 hoje = datetime.datetime.utcnow()
-semana_atras = hoje - datetime.timedelta(days=7) # DIAS ANTERIORES QUE VOCÊ QUER AS ESTATISTICAS
+semana_atras = hoje - datetime.timedelta(days=30) # DIAS ANTERIORES QUE VOCÊ QUER AS ESTATISTICAS
 
 request = youtube.search().list(
     part="snippet",
